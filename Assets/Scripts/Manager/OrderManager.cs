@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -86,14 +86,15 @@ public class OrderManager : MonoBehaviour
         if (correctRecipe == null)
         {
             OnRecipeFailed?.Invoke(this, EventArgs.Empty);
-            print("上菜失败");
+            // print("上菜失败");
         }
         else
         {
             orderRecipeList.Remove(correctRecipe);
             successDeliveryCount++;
+            orderCount--;
             OnRecipeSuccessed?.Invoke(this, EventArgs.Empty);
-            print("上菜成功");
+            // print("上菜成功");
         }
     }
 

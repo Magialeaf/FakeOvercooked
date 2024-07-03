@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 
     // private float waitingToStartTimer = 1f;
     private float countDownToStartTimer = 3f;
-    private float gamePlayingTimer = 15f;
+    private float gamePlayingTimer = 180f;
     private float gamePlayingTimerTotal;
 
     private bool isGamePause = false;
